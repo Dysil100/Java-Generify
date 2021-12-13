@@ -1,11 +1,9 @@
 import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.printing.PDFPageable;
 
 import javax.print.PrintService;
 import javax.print.PrintServiceLookup;
 import java.awt.*;
 import java.awt.print.PrinterException;
-import java.awt.print.PrinterJob;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
@@ -27,11 +25,11 @@ public class MainClass {
         Desktop.getDesktop().open(new File("./PDF_Tickets/Ticket.pdf"));*/
 
 
-        PrintService myPrintService = findPrintService("HP DeskJet Plus 4100 series 2"); // My Printer
+        /*PrintService myPrintService = findPrintService("HP DeskJet Plus 4100 series 2"); // My Printer
 
         PrinterJob job = PrinterJob.getPrinterJob();
         job.setPageable(new PDFPageable(document));
-        job.setPrintService(myPrintService);
+        job.setPrintService(myPrintService);*/
         //job.print();
     }
 
