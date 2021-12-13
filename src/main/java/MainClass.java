@@ -15,7 +15,7 @@ public class MainClass {
     public static void main(String[] args) throws IOException, PrinterException {
         TicketGenerator<Institution> ticketGenerator = new TicketGenerator<>();
 
-        Ticket<Institution> ticket = ticketGenerator.generate("Dysil, Silatsam", new Cinema());
+        Ticket<Institution> ticket = ticketGenerator.generate("Dysil", new Cinema());
         /*Ticket<Institution> ticket1 = ticketGenerator.generate("Dylan, Silatsam", new Restaurant());
         Ticket<Institution> ticket2 = ticketGenerator.generate("Dylan, Silatsam", new Restaurant());*/
 
